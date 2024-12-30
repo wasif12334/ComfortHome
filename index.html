@@ -28,7 +28,7 @@
     <section id="hero">
         <h1>Your Dream Home Awaits</h1>
         <p>Find the perfect property with us</p>
-        <button>Get Started</button>
+        <a href="get_started.html" target="_blank"><button>Get Started</button></a>
     </section>
 
   
@@ -68,7 +68,7 @@
             Real Estate Market Insights <br>
             Property Selection and Consultation <br>
             Tailored Real Estate Solutions</p>
-            <img src="logo.jpg" alt="" >
+            <img src="logo.png" alt="" >
         </div>
     </div>
     <div>
@@ -78,7 +78,9 @@
     <!-- Contact Section -->
     <section id="contact">
         <h2>Contact Us</h2>
-        <form>
+        <form action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="f7c7cf5c-f5e7-4cdb-9133-e5125f83945e">
+            
             <input type="text" name="name" placeholder="Your Name" required>
             <input type="email" name="email" placeholder="Your Email" required>
             <textarea name="message" placeholder="Your Message" required></textarea>

@@ -27,6 +27,7 @@ nav div h1{
     color: #0CA74B;
     font-weight: 700;
     text-shadow: 2px 2px 2px black;
+    cursor: pointer;
 }
 nav ul {
     list-style: none;
@@ -54,8 +55,9 @@ nav ul li a:hover {
 
 /* Hero Section */
 #hero {
-    background: url('hero_image.jpeg')  ;
-    
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(hero_image.jpeg);
+    min-height: 100vh;
+    width: 100%;
     background-position: center;
     background-size: cover;
     position: relative;
@@ -117,7 +119,7 @@ nav ul li a:hover {
     flex: 0.7  ;
 }
 .about-description img{
-    width: 50px;
+    width: 150px;
 }
 #about h2 {
     font-size: 2.5rem;
@@ -125,7 +127,7 @@ nav ul li a:hover {
 }
 #about p {
     font-size: 1.1rem;
-    margin-bottom: 30px;
+    margin-bottom: 5px;
 }
 
 /* Properties Section */
