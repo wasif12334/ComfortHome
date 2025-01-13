@@ -1,29 +1,35 @@
-// Smooth scrolling for navbar links
-document.querySelectorAll('nav ul li a').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
+const cards = document.querySelectorAll('.property-item');
 
-        // Get the target section ID from the link's href
-        const targetId = this.getAttribute('href').substring(1);
-        const targetSection = document.getElementById(targetId);
+    cards.forEach(card => {
+     const button = card.querySelector('button');
+      
+      button.addEventListener('click', () => {
+        // Collect product 
+        
+        const name = card.getAttribute('data-name');
+        const price = card.getAttribute('data-price');
+        const description = card.getAttribute('data-description');
+        const image = card.getAttribute('data-image');
+        const location = card.getAttribute('data-location');
+        const checkIn = card.getAttribute('data-checkin');
+        const checkOut = card.getAttribute('data-checkout');
+        const rooms = card.getAttribute('data-rooms');
 
-        // Scroll to the target section
-        targetSection.scrollIntoView({
-            behavior: 'smooth'
-        });
+        
+
+        // Create query parameters
+        const queryParams = new URLSearchParams({
+          name,
+          price,
+          description,
+          image,
+          checkIn,
+          checkOut,
+          rooms,
+          location
+        }).toString();
+
+        // Open the details page in a new tab with query parameters
+        window.open(`propertys.html?${queryParams}`, '_blank');
+      });
     });
-});
-
-// Form validation for the Contact Section
-const contactForm = document.querySelector('#contact form');
-
-contactForm.addEventListener('submit', function (e) {
-    const name = document.querySelector('[name="name"]').value;
-    const email = document.querySelector('[name="email"]').value;
-    const message = document.querySelector('[name="message"]').value;
-
-    if (!name || !email || !message) {
-        e.preventDefault(); // Prevent form submission
-        alert('Please fill out all fields before submitting.');
-    }
-});
