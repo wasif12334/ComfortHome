@@ -9,70 +9,133 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon_io/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
     <link rel="stylesheet" href="/Styling/style.css">
-    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <!-- Navbar -->
-    <nav>
-        <div><h1>Islamabad Comfort Home</h1></div>
-        <ul>
-            <li><a href="#hero">Home</a></li>
-            <li><a href="#about">About Us</a></li>
-            <li><a href="#properties">Properties</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+  <section id="header">
+  <!-- Navbar -->
+   <nav>
+    <h1 class="logo">Comfort Home Islamabad</h1>
+    <ul>
+      <li class="nav-item">Home</li>
+      <li class="nav-item">About</li>
+      <li class="nav-item">Rooms</li>
+      <li class="nav-item">Services</li>
+      <li class="nav-item btn">Book Now</li>
+    </ul>
+   </nav>
       
-    </nav>
 
     <!-- Hero Section -->
-    <section id="hero">
-        <h1>Your Dream Home Awaits</h1>
-        <p>Find the perfect property with us</p>
-        <a href="get_started.html" target="_blank"><button>Get Started</button></a>
+   <div id="hero">
+    <div class="hero-content">
+      <h1>Enjoy A Luxury Experience</h1>
+      <h3>Revel in unmatched comfort and upscale amenities tailored just for you</h3>
+      <form action="" class="hero-form">
+          <label for="Adults"><input type="number" placeholder="Adults"class="input "></label>
+          <label for="CHECKIN"><input type="date" onfocus="this.placeholder=''" onblur="this.placeholder='Check-in'" placeholder="Check-in" class="input "></label>
+          <label for="CHECKOUT"><input type="date"onfocus="this.placeholder=''" onblur="this.placeholder='Check-in'" placeholder="Check-out" class="input "></label>
+          <label for="NUMBER OF ROOMS"><input type="text"class="input" placeholder="NUMBER OF ROOMS"></label>
+          <input type="button" value="CHECK AVALIABILITY"class="form-btn ">
+      </form>
+    </div>
+    
+
+   </div>
+       
     </section>
 
   
 
-    <!-- Properties Section -->
-    <section id="properties">
-        <h2>Latest Properties</h2>
-        <div class="property-list">
-            <div class="property-item"  data-rooms="10" data-id="1" data-location="Islamabad" data-checkin="0" data-name="Luxury Villa" data-checkout="9"  data-price="$4000" data-description="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto quae ipsa aperiam, vel laboriosam magni iste quo consequuntur incidunt." data-image="/Images/prooperties img-1.jpeg">
-                <img src="/Images/prooperties img-1.jpeg" alt="Property 1">
-                <h3>Luxury Villa </h3>
-                <button>View Details</button>
-            </div>
-            <div class="property-item"  data-rooms="10" data-id="1" data-location="Islamabad" data-checkin="0" data-name="Exclusive Residence" data-checkout="9"  data-price="$10000" data-description="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto quae ipsa aperiam, vel laboriosam magni iste quo consequuntur incidunt." data-image="/Images/prooperties img-2.jpeg">
-                <img src="/Images/prooperties img-2.jpeg" alt="Property 1">
-                <h3>Exclusive Residence</h3>
-                <button>View Details</button>
-            </div>
-            <div class="property-item"  data-rooms="10" data-id="1" data-location="Islamabad" data-checkin="0" data-name="Modern Apartment" data-checkout="9"  data-price="$5034" data-description="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto quae ipsa aperiam, vel laboriosam magni iste quo consequuntur incidunt." data-image="/Images/prooperties img-3.jpeg">
-                <img src="/Images/prooperties img-3.jpeg" alt="Property 2">
-                <h3>Modern Apartment</h3>
-                <button>View Details</button>
-            </div>
+    <!-- rooms Section -->
+    <section id="rooms">
+        <p>The Pleasure Of Luxury</p>
+        <h1>Rooms & Suites</h1>
+        <p>Proin consectetur non dolor vitae pulvinar. Pellentesque sollicitudin dolor eget neque viverra, <br>sed interdum metus interdum. Cras lobortis pulvinar dolor, sit amet ullamcorper dolor iaculis vel</p>
+         <div class="rooms">
+            <!-- Card - 1 -->
+             <div class="card">
+            <img src="/Images/rooms-images/deluxe_room.jpeg" alt="Deluxe Room">
+            <h2 class="rooms-name">Deluxe Room</h2>
+            <p class="rooms-description">Experience the perfect blend of comfort and elegance in our Deluxe Room. Featuring plush bedding, modern décor, and premium amenities, this room is designed for both business and leisure travelers. Enjoy complimentary Wi-Fi, a flat-screen TV, and a well-appointed workspace to meet all your needs. Ideal for a luxurious yet affordable stay in Islamabad.</p>
+            <button class="BookNow-btn" >BOOK NOW</button>
+          </div>
+            <!-- Card - 2 -->
+        <div class="card">
+            <img src="/Images/rooms-images/Executive Room.jpeg" alt="Deluxe Room">
+            <h2 class="rooms-name">Executive Room</h2>
+            <p class="rooms-description">Tailored for business travelers, our Executive Room offers spacious accommodations with a dedicated work area and high-speed internet. Unwind in a cozy setting with modern furnishings, a flat-screen TV, and access to exclusive lounge benefits. Perfect for those seeking productivity and comfort in Islamabad.</p>
+            <button class="BookNow-btn" >BOOK NOW</button>
+        </div> <!-- Card - 3 -->
+        <div class="card">
+        <img src="/Images/rooms-images/Junior Suite.jpeg" alt="Deluxe Room">
+        <h2 class="rooms-name">Junior Suite</h2>
+        <p class="rooms-description">Step into our Junior Suite, where sophistication meets relaxation. This spacious suite includes a separate sitting area, a luxurious king-size bed, and state-of-the-art amenities. Perfect for guests seeking an elevated stay experience with added comfort and style.</p>
+        <button class="BookNow-btn" >BOOK NOW</button>
         </div>
+         
+    </section>
+    <section id="services">
+      <div class="services-content">
+        <h3>Best Prices</h3>
+        <h1>Extra <br> Services</h1>
+        <p>Proin consectetur non dolor vitae pulvinar. Pellentesque sollicitudin dolor eget neque viverra,<br> sed interdum metus interdum. Crasbr
+           lobortis pulvinar dolor, sit amet ullamcorper dolor iaculis vel <br>Crasfinibus laoreet felis et hendrerit. Integer ligula lorem, finibus vitae lorem at, egestas <br>consectetur urna. Integer id ultricies elit. Maecenas sodales nibh, quis posuere felis <br>. In commodo mi lectus venenatis metus eget fringilla. Suspendisse varius ante eget.
+          </p>
+      </div>
+      <div class="service-cards">
+         <div class="s-card">
+          <span class="banner">Monthly</span>
+          <h2>Room Cleaning</h2>
+          <p>Perfect for early-stage startups</p>
+          <h1>Prices</h1>
+          <ul>
+            <li> <i class="fa-regular fa-square-check"></i>   Hotel quis justo at lorem</li>
+            <li> <i class="fa-regular fa-square-check"></i>   Fusce sodales urna et tempus</li>
+            <li> <i class="fa-regular fa-square-check"></i>   Vestibulum blandit lorem quis</li>
+          </ul>
+          <button class="service-btn"> Get Started</button>
+         </div>
+         
+      </div>
+      <div class="service-cards">
+        <div class="s-card">
+          <span class="banner">Monthly</span>
+         <h2>Drinks included</h2>
+         <p>Perfect for early-stage startups</p>
+         <h1>Prices</h1>
+         <ul>
+           <li> <i class="fa-regular fa-square-check"></i>   Hotel quis justo at lorem</li>
+           <li> <i class="fa-regular fa-square-check"></i>   Fusce sodales urna et tempus</li>
+           <li> <i class="fa-regular fa-square-check"></i>   Vestibulum blandit lorem quis</li>
+         </ul>
+         <button class="service-btn"> Get Started</button>
+        </div>
+        
+     </div>
     </section>
   <!-- About Us Section -->
   <section id="about">
+  
+      <div  class="about-img"  ></div>
+    
     <div class="about-description">
-        <h2>Why Islamabad Comfort Home?</h2>
-        <p>We provide the best real estate services with a focus on customer satisfaction. <br>At Islamabad Comfort Home,<br> we pride ourselves on providing exceptional real estate services that go beyond expectations.</p>
+      <span>Luxury Hotel & Resort</span>
+        <h1>Islamabad <br> Comfort Home</h1>
+        <p>We provide the best real estate services with a focus on customer satisfaction. <br>At Islamabad Comfort Home,<br> we pride ourselves on providing exceptional real estate services <br> that go beyond expectations.</p>
 
         <div> 
       
             <h3>Our Expertise</h3>
-            <p>Years of experience in the industry <br>
-            Real Estate Market Insights <br>
-            Property Selection and Consultation <br>
-            Tailored Real Estate Solutions</p>
-            <img src="logo.png" alt="" >
+            <p><i class="fa-regular fa-square-check"></i> Years of experience in the industry <br>
+              <i class="fa-regular fa-square-check"></i>   Real Estate Market Insights <br>
+              <i class="fa-regular fa-square-check"></i >   Property Selection and Consultation <br>
+              <i class="fa-regular fa-square-check"></i>    Tailored Real Estate Solutions</p>
+            <img src="/Images/logo.jpg" alt="" >
+            <!-- <button class="form-btn">DISCOVE MORE</button> -->
         </div>
     </div>
-    <div>
-        <img  class="about-img" src="/Images/about-img.jpeg" alt="">
-    </div>
+   
 </section>
     <!-- Contact Section -->
     <section id="contact">

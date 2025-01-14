@@ -1,276 +1,402 @@
-/* Reset some default styles */
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: "Roboto Condensed", serif;
+
+}
+body{
+background: #f1f1f18f;
 }
 
-/* Body */
-body {
-    background-color: #f9f9f9;
-    line-height: 1.6;
+/* header Section */
+#header {
+background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(/Images/hero_image.jpeg);
+min-height: 100vh;
+width: 100%;
+background-position: center;
+background-size: cover;
+position: relative;
+color:white;
+height: 80vh;
+
+
 }
 
 /* Navbar Styles */
-nav {
-    position: sticky;
-    top: 0;
-    background-color: #333;
-    padding: 1rem;
-    z-index: 1000;
-    display: flex;
-   justify-content: space-between;
-    align-items: center;
+nav{
+display: flex;
+justify-content: space-between;
+width: 100%;
+height: 12vh;
+align-items: center;
 }
-nav div h1{
-    color: #0CA74B;
-    font-weight: 700;
-    text-shadow: 2px 2px 2px black;
-    cursor: pointer;
+.logo{
+font-size: 30px;
+cursor: pointer;
+padding-left: 20px;
+font-weight: 700;
 }
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
+nav>ul{
+display: flex;
+width: 45%;
+justify-content: space-evenly;
+list-style: none;
+font-size: 20px;
+font-weight: 600;
 }
-
-nav ul li {
-    margin: 0 20px;
+nav>ul>li{
+cursor: pointer;
+transition: all 0.4s;
+padding: 6px;
 }
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 1.1rem;
-    padding: 8px 16px;
-    transition: 0.4s;
+nav>ul>li:hover{
+color: #0a8f34;
 }
-
-nav ul li a:hover {
-    background-color: #0CA74B; /* Fresh Green */
-    border-radius: 4px;
-    border-radius: 10%;
+.btn{
+background: green;
+border: 1px solid transparent;
+border-radius:10px;
 }
-
+.btn:hover{
+background: transparent;
+border:1px solid forestgreen;
+}
 /* Hero Section */
-#hero {
-    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(/Images/hero_image.jpeg);
-    min-height: 100vh;
-    width: 100%;
-    background-position: center;
-    background-size: cover;
-    position: relative;
-    color:white;
-    text-align: center;
-    padding: 120px 20px;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+#hero{
+width: 100%;
+height: 90vh;
+display: flex;
+justify-content: center;
+align-items: center;
 }
 
-#hero h1 {
-    font-size: 3.5rem;
-    margin-bottom: 20px;
-    color: wheat;
+.hero-content{
+font-size: 4vh;
+text-align: center;
 }
-
-#hero p {
-    font-size: 1.3rem;
-    margin-bottom: 30px;
-    color: wheat;
+.hero-content>h3{
+/* font-size: x-small; */
+font-weight: 100;
 }
-
-#hero button {
-    padding: 12px 30px;
-    background-color: #0CA74B; /* Fresh Green */
-    color: white;
-    border: none;
-    cursor: pointer;
-    font-size: 1.2rem;
-    border-radius: 5px;
-    transition: 0.4s;
-    font-weight: bold;
+.hero-form{
+border: 1px solid;
+height: 100px;
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+background:#e6e6e633;
+border-radius: 10px;
+padding: 0px 20px;
+color: #333;
 }
+.hero-form>input{
+margin: 0 10px;
+font-size: 20px;
+padding: 5px 20px;
+border: 0px solid gray;
 
-#hero button:hover {
-    background-color: #0a8f34; /* Soft Green */
-    border-radius: 0 20px  0 0px;
-    
 }
+.input{
+padding: 10px;
+height: 100ex;
+border-radius: 0px;
+background: white;
+border: none;
+height: 40px;
+color: black;
+margin: 0px 3px;
+}
+input[type="date"]::before {
+content: attr(placeholder);
+color: gray;
+}
+input[type="date"]:focus::before {
+content: '';
+}
+.form-btn{
+padding: 10px;
+border-radius: 0px;
+background: orange;
+border: none;
+height: 40px;
+color: white;
+cursor: pointer;
 
+}
 /* About Section */
 #about {
-    background-color:white ;
-    padding: 60px 20px;
-     display: flex;
-     justify-content: space-around;
-     align-items: center;
+background-color:white ;
+display: flex;
+justify-content: space-around;
+align-items: center;
+width: 100%;
+height: 100vh;
 }
 .about-img {
-    width: 400px;
-    height:300px;
-    border: none;
-    border-radius: 10px;
+width: 50%;
+background-image:  linear-gradient(rgba(4, 9, 30, 0.521),rgba(4, 9, 30, 0.582)),url(/Images/aboutus.jpg);
+background-size: cover;
+height:80vh;
+border: none;
 }
 .about-description{
-    flex: 0.7  ;
+padding: 10px;
 }
 .about-description img{
-    width: 150px;
+width: 150px;
 }
-#about h2 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
+.about-description>div>h3{
+    font-size: 40px;
 }
-#about p {
-    font-size: 1.1rem;
-    margin-bottom: 5px;
+i{
+    color: green;
+    font-size: 20px;
+    font-weight: 800;
 }
-
-/* Properties Section */
-#properties {
-    background-color: #f4f4f4;;
-    padding: 60px 20px;
-    text-align: center;
+.about-description>span{
+    font-weight: 800;
 }
-
-#properties h2 {
-    font-size: 2.5rem;
-    margin-bottom: 40px;
+.about-description>h1{
+    font-size: 50px;
+    line-height: 60px;
 }
 
-.property-list {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+
+
+/* Rooms Section */
+#rooms{
+text-align: center;
+}
+#rooms>h1{
+font-size: 50px;
+margin-top: -13px;
+}
+#rooms>p{
+margin-top: 23px;
+}
+.rooms{
+width: 100%;
+height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+.card{
+overflow: hidden;
+width: 350px;
+height: 500px;
+border: 0px;
+box-shadow: 1px 1px 1px rgb(53, 52, 52);
+background: #ffffff;
+transition: all 0.1s;
+margin: 30px;
+}
+.card>img:hover{
+transition: all 1s;
+z-index: -1;
+transform:scale(1.1,1.1);
+}
+.card:hover{
+box-shadow: 10px 5px 5px #176d32;
+}
+.card>img{
+width: 100%;
+height: 250px;  
+}
+.card>h2{
+font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.rooms-description{
+font-size: 14px;
+}
+.BookNow-btn{
+border: 1px solid black;
+padding: 9px;
+margin-top: 10px;
+transition:all  0.5s;
+box-shadow: 10px 2px 2px ;
+font-weight: bold;
+color: #0a8f34;
+
 }
 
-.property-item {
-    background-color: #f9f9f9;
-    width: 300px;
-    margin: 20px;
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
-}
+.BookNow-btn:hover{
+background: #0a8f34;
+color: rgb(5, 5, 5);
 
-.property-item img {
-    width: 100%;
-    border-radius: 10px;
 }
-
-.property-item h3 {
-    margin: 20px 0;
-}
-
-.property-item button {
-    padding: 10px 20px;
-    background-color: #0CA74B; /* Fresh Green */
-    color: white;
-    border: none;
-    cursor: pointer;
-    font-size: 1.1rem;
-    border-radius: 5px;
-}
-
-.property-item button:hover {
-    background-color: #2BB957; /* Soft Green */
-}
-
 /* Contact Section */
 #contact {
-    background-color: #f4f4f4;
-    padding: 60px 20px;
-    text-align: center;
+background-color: #f4f4f4;
+padding: 60px 20px;
+text-align: center;
 }
 
 #contact h2 {
-    font-size: 2.5rem;
-    margin-bottom: 30px;
+font-size: 2.5rem;
+margin-bottom: 30px;
 }
 
 #contact form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 20px;
+display: flex;
+flex-direction: column;
+align-items: center;
+margin-top: 20px;
 }
 
 #contact input, #contact textarea {
-    width: 80%;
-    max-width: 600px;
-    padding: 12px;
-    margin: 10px;
-    border-radius: 5px;
-    border: 1px solid #ddd;
+width: 80%;
+max-width: 600px;
+padding: 12px;
+margin: 10px;
+border-radius: 5px;
+border: 1px solid #ddd;
 }
 
 #contact button {
-    padding: 12px 30px;
-    background-color: #0CA74B; /* Fresh Green */
-    color: white;
-    border: none;
-    cursor: pointer;
-    font-size: 1.1rem;
-    border-radius: 5px;
+padding: 12px 30px;
+background-color: #0CA74B; /* Fresh Green */
+color: white;
+border: none;
+cursor: pointer;
+font-size: 1.1rem;
+border-radius: 5px;
 }
 
 #contact button:hover {
-    background-color: #2BB957; /* Soft Green */
+background-color: #2BB957; /* Soft Green */
 }
+/* services -section */
+#services{
+width: 100%;
+height: 100vh;
+margin: 2px 0;
 
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.services-content{
+
+padding:20px;
+margin-left: 20px;
+}
+.services-content>h3{
+color: #0a8f34;
+font-size: 25px;
+}
+.services-content>h1{
+font-size: 50px;
+
+line-height: 100%;
+}
+.services-content>p{
+font-size: 15px;
+line-height: 50px;
+
+}
+.s-card{
+box-shadow: 2px 12px 12px gray;
+padding: 20px;
+width: 300px;
+height: 400px;
+background: rgb(255, 255, 255);
+margin-right: 10px;
+}
+.s-card>h2{
+font-size: 30px;
+color:#087032;
+font-weight: 700;
+}
+.s-card>ul{
+list-style: none;
+line-height: 30px;
+margin-bottom: 40px;
+}
+.service-btn{
+width: 145px;
+height: 50px;
+background: #087032;
+border: 0px;
+border-radius: 10px;
+font-size: 22px;
+color: white;
+font-weight: 700;
+text-shadow: 1px 4px 9px white;
+
+}
+.banner{
+background:#E1E1E1 ;
+padding: 2px;
+font-weight: 600;
+text-shadow: 1px 4px 9px rgb(0, 0, 0);
+float: right;
+
+}
 /* Footer Styles */
 footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 20px;
+background-color: #333;
+color: white;
+text-align: center;
+padding: 20px;
 }
 
 footer p {
-    margin: 10px 0;
+margin: 10px 0;
 }
 
 footer a {
-    color: #74DD66; /* Light Green */
-    text-decoration: none;
+color: #74DD66; /* Light Green */
+text-decoration: none;
 }
 
 footer a:hover {
-    text-decoration: underline;
+text-decoration: underline;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    nav ul {
-       display: none;
-        padding: 10px;
-    }
+nav ul {
+display: none;
+padding: 10px;
+}
 
-    #hero h1 {
-        font-size: 2.5rem;
-    }
-    #about{
-             flex-direction:column-reverse;
-    }
-    #about h2 {
-        font-size: 1.5rem;
-        margin-bottom: 20px;
-    }
-    .about-img{
-        width: 400px;
-        height: 300px;
-    }
-    .property-list {
-        flex-direction: column;
-        align-items: center;
-    }
+#hero h1 {
+font-size: 2.5rem;
+}
+.rooms{
+display: block;
+min-height: 300vh;
+text-align: center;
+align-content: center;
+width: 50%;
+}
 
-    footer {
-        padding: 10px;
-    }
+.card{
+width: 350px;
+height: 500px;
+}
+
+#about{
+        flex-direction:column-reverse;
+}
+#about h2 {
+font-size: 1.5rem;
+margin-bottom: 20px;
+}
+.about-img{
+width: 400px;
+height: 300px;
+}
+.property-list {
+flex-direction: column;
+align-items: center;
+}
+
+footer {
+padding: 10px;
+}
 }
