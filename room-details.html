@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Room Details</title>
+  <!-- <link rel="stylesheet" href="/Styling/rooms.css"> -->
+  <link rel="stylesheet" href="Styling/rooms.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <h1>Comfort Home</h1>
+    </div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Rooms</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <main class="room-details">
+    <section class="room-gallery">
+      <img id="room-image" src="/Images/prooperties img-1.jpeg" alt="Room Image" class="room-main-img">
+    </section>
+
+    <section class="room-info">
+      <h2 id="room-name">Deluxe Room</h2>
+      <p id="room-description">A luxurious room with a king-sized bed.</p>
+      <p id="room-price">$100 per night</p>
+
+      <button id="book-now">Book Now</button>
+    </section>
+  </main>
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <form action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="f7c7cf5c-f5e7-4cdb-9133-e5125f83945e">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Submit</button>
+    </form>
+</section>
+  <footer>
+    <p>&copy; 2025 Comfort Home. All rights reserved.</p>
+  </footer>
+<script src="room.js"></script>
+</body>
+</html>
