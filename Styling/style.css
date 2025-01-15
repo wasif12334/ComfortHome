@@ -7,7 +7,7 @@ font-family: "Roboto Condensed", serif;
 
 }
 body{
-background: #f1f1f18f;
+background: #F7F5F1;
 }
 
 /* header Section */
@@ -18,7 +18,7 @@ width: 100%;
 background-position: center;
 background-size: cover;
 position: relative;
-color:white;
+color:#ffffff;
 height: 80vh;
 
 
@@ -228,6 +228,97 @@ background: #0a8f34;
 color: rgb(5, 5, 5);
 
 }
+/* Hotlthings-section */
+#hotelthing{
+    width: 100%;
+    height: 150vh;
+    padding: 10px 0;
+    text-align: center;
+}
+#hotelthing>h3{
+    color: #087032;
+    font-size: 25px;
+}
+#hotelthing>h1{
+    font-size: 60px;
+    font-weight: 600;
+    text-shadow: 11px 12px 21px black;
+}
+#hotelthing>p{
+    font-size: 15px;
+    margin: 10px 0  ;
+}
+.hotel-cards{
+    display: flex;
+    width: 100%;
+    height: 50vh;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.h-card{
+    width: 300px;
+    height: 300px;
+    padding: 10px;
+    background: #ffffff;
+    border: 1px solid #ffffff;
+    
+    transition: all 0.5s;
+    
+}
+.h-card:hover{
+    transform: scale(1.1,1.1);
+    box-shadow: 1px 3px 3px rgb(202, 201, 201);
+}
+.h-card>i{
+    font-size: 35px;
+}
+.h-card>h2{
+    font-size: 30px;
+}
+
+/* BookingForm */
+#Bookingform{
+    display: flex;
+    justify-content: space-evenly;
+    justify-content: center;
+    width: 100%;height: 80vh;
+    background: #ffffff;
+    padding: 10px;
+}
+.form>h3{
+    color: #0CA74B;
+    font-size: 40px;
+}
+.form>h1{
+    font-size: 60px;
+    font-weight:600;
+}
+form{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 21px;
+    margin: 10px 10;
+    padding: 10px;
+}
+form>label>input{
+    width: 200px;
+    height: 30px;
+}
+form>button[type="submit"]{
+ background: #42ac11;
+ grid-column: 1/3;
+ font-size: 20px;
+ font-weight: 500;
+}
+.form-img{
+    width: 50%;
+    
+    background-image:url(/Images/bookingfornpic.avif);
+    background-size: cover;
+    
+}
+
+
 /* Contact Section */
 #contact {
 background-color: #f4f4f4;
