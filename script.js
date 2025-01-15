@@ -1,35 +1,12 @@
-const cards = document.querySelectorAll('.property-item');
+let availBtn = document.querySelector('.form-btn')
 
-    cards.forEach(card => {
-     const button = card.querySelector('button');
-      
-      button.addEventListener('click', () => {
-        // Collect product 
-        
-        const name = card.getAttribute('data-name');
-        const price = card.getAttribute('data-price');
-        const description = card.getAttribute('data-description');
-        const image = card.getAttribute('data-image');
-        const location = card.getAttribute('data-location');
-        const checkIn = card.getAttribute('data-checkin');
-        const checkOut = card.getAttribute('data-checkout');
-        const rooms = card.getAttribute('data-rooms');
-
-        
-
-        // Create query parameters
-        const queryParams = new URLSearchParams({
-          name,
-          price,
-          description,
-          image,
-          checkIn,
-          checkOut,
-          rooms,
-          location
-        }).toString();
-
-        // Open the details page in a new tab with query parameters
-        window.open(`propertys.html?${queryParams}`, '_blank');
-      });
-    });
+let totalRooms = 10;
+let avail =true;
+availBtn.addEventListener('click',()=>{
+  const adults = document.querySelector('.adults').value;
+  const checkIn = document.querySelector('.checkindate').value;
+  const checkOut = document.querySelector('.checkioutdate').value;
+  const userRooms = document.querySelector('.numberofrooms').value;
+  console.log(adults,checkIn,checkOut,userRooms);
+  
+})
