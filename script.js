@@ -8,5 +8,4 @@ availBtn.addEventListener('click',()=>{
   const checkOut = document.querySelector('.checkioutdate').value;
   const userRooms = document.querySelector('.numberofrooms').value;
   console.log(adults,checkIn,checkOut,userRooms);
-  
 })
