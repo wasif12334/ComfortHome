@@ -30,20 +30,37 @@
     <div class="booking-top-nav">
         <div class="container">
             <div class="booking-top-nav-left">
-                <a href="#" class="language-selector">
-                    <i class="fas fa-globe"></i>
-                    <span>English (US)</span>
-                </a>
-                <a href="#" class="currency-selector">
-                    <i class="fas fa-dollar-sign"></i>
-                    <span>USD</span>
-                </a>
+                <div class="language-selector">
+                    <a href="#" class="active">
+                        <i class="fas fa-globe"></i>
+                        <span>English (US)</span>
+                    </a>
+                    <div class="dropdown-content">
+                        <a href="#">English (UK)</a>
+                        <a href="#">Español</a>
+                        <a href="#">Français</a>
+                        <a href="#">Deutsch</a>
+                    </div>
+                </div>
+                <div class="currency-selector">
+                    <a href="#" class="active">
+                        <i class="fas fa-dollar-sign"></i>
+                        <span>USD</span>
+                    </a>
+                    <div class="dropdown-content">
+                        <a href="#">EUR</a>
+                        <a href="#">GBP</a>
+                        <a href="#">JPY</a>
+                        <a href="#">AUD</a>
+                    </div>
+                </div>
             </div>
             <div class="booking-top-nav-right">
                 <a href="#" class="list-property">
                     <i class="fas fa-home"></i>
                     <span>List your property</span>
                 </a>
+                <span class="separator"></span>
                 <a href="#" class="register">
                     <i class="fas fa-user-plus"></i>
                     <span>Register</span>
@@ -63,6 +80,10 @@
                 <img src="/Images/logo.jpg" alt="Comfort Home Logo">
                 <span>Comfort Home Islamabad</span>
             </div>
+            <button class="mobile-menu-btn" aria-label="Toggle navigation menu">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="nav-overlay"></div>
             <div class="booking-nav-links">
                 <a href="#hero" class="active">Home</a>
                 <a href="#rooms">Rooms</a>

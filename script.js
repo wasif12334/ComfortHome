@@ -342,3 +342,37 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
+
+// Mobile Menu Functionality
+document.addEventListener('DOMContentLoaded', () => {
+    const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+    const navLinks = document.querySelector('.booking-nav-links');
+    const navOverlay = document.querySelector('.nav-overlay');
+    const body = document.body;
+
+    function toggleMenu() {
+        navLinks.classList.toggle('active');
+        navOverlay.classList.toggle('active');
+        body.style.overflow = navLinks.classList.contains('active') ? 'hidden' : '';
+    }
+
+    mobileMenuBtn.addEventListener('click', toggleMenu);
+    navOverlay.addEventListener('click', toggleMenu);
+
+    // Close menu when clicking on a link
+    const navItems = document.querySelectorAll('.booking-nav-links a');
+    navItems.forEach(item => {
+        item.addEventListener('click', () => {
+            if (navLinks.classList.contains('active')) {
+                toggleMenu();
+            }
+        });
+    });
+
+    // Close menu when pressing Escape key
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && navLinks.classList.contains('active')) {
+            toggleMenu();
+        }
+    });
+});
