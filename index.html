@@ -3,283 +3,329 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Comfort Home</title>
-    <meta property="og:title" content="Comfort Home Islamabad">
-    <meta property="og:description" content="Your ideal accommodation for comfort, convenience, and a welcoming atmosphere.">
-    <meta property="og:image" content="https://comfort-home-five.vercel.app/path-to-image.jpg">
+    <title>Comfort Home Islamabad - Luxury Hotel & Resort</title>
+    <meta name="description" content="Experience luxury accommodation in the heart of Islamabad. Book your stay at Comfort Home for the perfect blend of comfort and elegance.">
+    <meta property="og:title" content="Comfort Home Islamabad - Luxury Hotel & Resort">
+    <meta property="og:description" content="Your ideal accommodation for comfort, convenience, and a welcoming atmosphere in Islamabad.">
+    <meta property="og:image" content="https://comfort-home-five.vercel.app/Images/hero_image.jpeg">
     <meta property="og:url" content="https://comfort-home-five.vercel.app">
-    <meta property="og:type" content="website"> 
+    <meta property="og:type" content="website">
+    
+    <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="/favicon_io/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon_io/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon_io/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
     <link rel="stylesheet" href="/Styling/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/Styling/booking.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 <body>
-  <section id="header">
-  <!-- Navbar -->
-   <nav>
-    <h1 class="logo"> <img src="/Images/logo.jpg" alt="">Comfort Home Islamabad</h1>
-    <ul>
-<a href="#hero"><li class="nav-item">Home</li></a>
- <a href="#about"><li class="nav-item">About</li></a>
-<a href="#rooms"><li class="nav-item">Rooms</li></a>
-    <a href="#services"><li class="nav-item">Services</li></a>
-      <a href="#Bookingform" class="btn"><li class="nav-item ">Book Now</li></a>
-    </ul>
-   </nav>
-      <!-- Hero Section -->
-   <div id="hero">
-    <div class="hero-content">
-      <h1>Enjoy A Luxury Experience</h1>
-      <h3>Revel in unmatched comfort and upscale amenities tailored just for you</h3>
-      <form action="" class="hero-form">
-          <label for="Adults"><input type="number" placeholder="Adults"class="input " class="adults"></label>
-          <label for="CHECKIN"><input type="date" onfocus="this.placeholder=''"  onblur="this.placeholder='Check-in'" placeholder="Check-in" class="input checkindate "></label>
-          <label for="CHECKOUT"><input type="date"onfocus="this.placeholder=''" onblur="this.placeholder='Check-in'" placeholder="Check-out" class="input  checkOutdate"></label>
-          <label for="NUMBER OF ROOMS"><input type="text"class="input numberofrooms" placeholder="NUMBER OF ROOMS "></label>
-          <input type="button" value="CHECK AVALIABILITY"class="form-btn ">
-      </form>
-    </div>
-   </div>     
-    </section>
-    <!-- rooms Section -->
-    <section id="rooms">
-        <p>The Pleasure Of Luxury</p>
-        <h1>Rooms & Suites</h1>
-        <p>Proin consectetur non dolor vitae pulvinar. Pellentesque sollicitudin dolor eget neque viverra, <br>sed interdum metus interdum. Cras lobortis pulvinar dolor, sit amet ullamcorper dolor iaculis vel</p>
-         <div class="rooms">
-            <!-- Card - 1 -->
-             <div class="card">
-            <img src="/Images/rooms-images/room-1.jpeg" alt="Deluxe Room" >
-            <h2 class="rooms-name">Family Room</h2>
-            <p class="rooms-description">
-              2 single bedsand1 futon bed .</p>
-           <button class="BookNow-btn" data-id="1"  >BOOK NOW</button>
-          </div>
-            <!-- Card - 2 -->
-        <div class="card">
-            <img src="/Images/rooms-images/room-2.jpeg" alt="Deluxe Room">
-            <h2 class="rooms-name">Family Studio</h2>
-            <p class="rooms-description">1 double bedor2 futon beds</p>
-          <button class="BookNow-btn"data-id="2" >BOOK NOW</button>
-        </div> <!-- Card - 3 -->
-        <div class="card">
-        <img src="/Images/rooms-images/room-3.jpg" alt="Deluxe Room">
-        <h2 class="rooms-name">Two-Bedroom House</h2>
-        <p class="rooms-description">Bedroom 12 single bedsand2 futon beds <br>
-                                     Bedroom 21 double bedand2 futon beds <br>
-                                     Living room1 sofa bed</p>
-       <button class="BookNow-btn"data-id="3"  >BOOK NOW</button>
-        </div>
-         </div>
-         <div class="rooms">
-          <!-- Card - 4 -->
-           <div class="card">
-          <img src="/Images/rooms-images/room-4.jpeg" alt="Deluxe Room" >
-          <h2 class="rooms-name">Three-Bedroom House</h2>
-          <p class="rooms-description">Bedroom 12 single beds</p>
-          <p class="rooms-description">Bedroom 22 single beds</p>
-          <p class="rooms-description">Bedroom 31 double bed</p>
-          <p class="rooms-description">Living room1 sofa bed</p>
-           <button class="BookNow-btn" data-id="4" >BOOK NOW</button>
-        </div>
-          <!-- Card - 5 -->
-      <div class="card">
-          <img src="/Images/rooms-images/room-5.jpeg" alt="Deluxe Room">
-          <h2 class="rooms-name"  >Four-Bedroom House</h2>
-       
-        <p class="rooms-description"> Bedroom 12 single bedsand2 futon bed</p>
-         <p class="rooms-description"> Bedroom 22 single beds</p>
-       <p class="rooms-description">  Bedroom 31 double bedand2 futon beds</p>
-          <p class="rooms-description">Bedroom 41 double bedand2 futon beds</p>
-        <p class="rooms-description"> Living room1 sofa bed</p>
-          <p class="rooms-description">Living room1 sofa bed</p>
-       <button class="BookNow-btn" data-id="5"  >BOOK NOW</button>
-      </div> <!-- Card - 6 -->
-      <div class="card">
-      <img src="/Images/rooms-images/room-6.jpeg" alt="Deluxe Room">
-      <h2 class="rooms-name">Male Dormitory Room</h2>
-      <p class="rooms-description">2 single beds</p>
-      <button class="BookNow-btn "  data-id="6" >BOOK NOW</button>
-      </div>
-       </div>
-       <a href=""></a><button class="BookNow-btn ">MORE</button></a> 
-    </section>
-    <!-- Services Section -->
-    <section id="services">
-      <div class="services-content">
-        <h3>Best Prices</h3>
-        <h1>Extra <br> Services</h1>
-        <p>Proin consectetur non dolor vitae pulvinar. Pellentesque sollicitudin dolor eget neque viverra,<br> sed interdum metus interdum. Crasbr
-           lobortis pulvinar dolor, sit amet ullamcorper dolor iaculis vel <br>Crasfinibus laoreet felis et hendrerit. Integer ligula lorem, finibus vitae lorem at, egestas <br>consectetur urna. Integer id ultricies elit. Maecenas sodales nibh, quis posuere felis <br>. In commodo mi lectus venenatis metus eget fringilla. Suspendisse varius ante eget.
-          </p>
-      </div>
-      <div class="service-cards">
-         <div class="s-card">
-          <span class="banner">Monthly</span>
-          <h2>Room Cleaning</h2>
-          <p>Perfect for early-stage startups</p>
-          <h1>Prices</h1>
-          <ul>
-            <li> <i class="fa-regular fa-square-check"></i>   Hotel quis justo at lorem</li>
-            <li> <i class="fa-regular fa-square-check"></i>   Fusce sodales urna et tempus</li>
-            <li> <i class="fa-regular fa-square-check"></i>   Vestibulum blandit lorem quis</li>
-          </ul>
-          <button class="service-btn"> Get Started</button>
-         </div>
-         <div class="s-card">
-          <span class="banner">Monthly</span>
-         <h2>Drinks included</h2>
-         <p>Perfect for early-stage startups</p>
-         <h1>Prices</h1>
-         <ul>
-           <li> <i class="fa-regular fa-square-check"></i>   Hotel quis justo at lorem</li>
-           <li> <i class="fa-regular fa-square-check"></i>   Fusce sodales urna et tempus</li>
-           <li> <i class="fa-regular fa-square-check"></i>   Vestibulum blandit lorem quis</li>
-         </ul>
-         <button class="service-btn"> Get Started</button>
-        </div>
-      </div>
-    </section>
-  <!-- About Us Section -->
-  <section id="about">
-  
-      <div  class="about-img"  ></div>
-    
-    <div class="about-description">
-      <span>Luxury Hotel & Resort</span>
-        <h1>Islamabad <br> Comfort Home</h1>
-        <p>We provide the best real estate services with a focus on customer satisfaction. <br>At Islamabad Comfort Home,<br> we pride ourselves on providing exceptional real estate services <br> that go beyond expectations.</p>
-
-        <div> 
-      
-            <h3>Our Expertise</h3>
-            <p><i class="fa-regular fa-square-check"></i> Years of experience in the industry <br>
-              <i class="fa-regular fa-square-check"></i>   Real Estate Market Insights <br>
-              <i class="fa-regular fa-square-check"></i >   Property Selection and Consultation <br>
-              <i class="fa-regular fa-square-check"></i>    Tailored Real Estate Solutions</p>
-            <img src="/Images/logo.jpg" alt="" >
-            <!-- <button class="form-btn">DISCOVE MORE</button> -->
+    <!-- Top Navigation Bar -->
+    <div class="booking-top-nav">
+        <div class="container">
+            <div class="booking-top-nav-left">
+                <a href="#" class="language-selector">
+                    <i class="fas fa-globe"></i>
+                    <span>English (US)</span>
+                </a>
+                <a href="#" class="currency-selector">
+                    <i class="fas fa-dollar-sign"></i>
+                    <span>USD</span>
+                </a>
+            </div>
+            <div class="booking-top-nav-right">
+                <a href="#" class="list-property">
+                    <i class="fas fa-home"></i>
+                    <span>List your property</span>
+                </a>
+                <a href="#" class="register">
+                    <i class="fas fa-user-plus"></i>
+                    <span>Register</span>
+                </a>
+                <a href="#" class="sign-in">
+                    <i class="fas fa-sign-in-alt"></i>
+                    <span>Sign in</span>
+                </a>
+            </div>
         </div>
     </div>
-   
-</section>
-<section id="hotelthing" >
-<h3>Explore</h3>
-  <h1>The Hotel</h1>
-  <p>Proin consectetur non dolor vitae pulvinar. Pellentesque sollicitudin dolor eget neque viverra,<br>
-     sed interdum metus interdum. Cras lobortis pulvinar dolor, sit amet ullamcorper dolor iaculis vel</p>
-<div class="hotel-cards">
-  <div class="h-card">
-    <i class="fas fa-table"></i>
-    <h2>Air Conditioners</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam dolo ducimus distinctio. Ut, fugiat debitis.</p>
 
-  </div>
-  <div class="h-card">
-    <i class="fa-solid fa-wifi"></i>
-    <h2>High speed WiFi</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam dolo ducimus distinctio. Ut, fugiat debitis.</p>
+    <!-- Main Navigation -->
+    <nav class="booking-main-nav">
+        <div class="container">
+            <div class="booking-logo">
+                <img src="/Images/logo.jpg" alt="Comfort Home Logo">
+                <span>Comfort Home Islamabad</span>
+            </div>
+            <div class="booking-nav-links">
+                <a href="#hero" class="active">Home</a>
+                <a href="#rooms">Rooms</a>
+                <a href="#facilities">Facilities</a>
+                <a href="#reviews">Reviews</a>
+                <a href="#location">Location</a>
+                <a href="#contact">Contact</a>
+                <button class="booking-book-now-btn">
+                    <i class="fas fa-calendar-check"></i>
+                    Book Now
+                </button>
+            </div>
+        </div>
+    </nav>
 
-  </div><div class="h-card">
-    <i class="fa-solid fa-lock"></i>
-    <h2>Strong Locker</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam dolo ducimus distinctio. Ut, fugiat debitis.</p>
+    <!-- Hero Section -->
+    <section class="booking-hero" id="hero">
+        <div class="booking-hero-image">
+            <div class="booking-hero-overlay">
+                <div class="container">
+                    <div class="booking-hero-content fade-in">
+                        <h1>Experience Luxury in the Heart of Islamabad</h1>
+                        <p>Discover the perfect blend of comfort, elegance, and world-class hospitality at Comfort Home Islamabad.</p>
+                        <div class="booking-highlights">
+                            <div class="highlight-item">
+                                <i class="fas fa-star"></i>
+                                <span>4.9/5 Rating</span>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-award"></i>
+                                <span>Best Luxury Hotel 2024</span>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Prime Location</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  </div>
-</div>
-<br><br><br>
-<div class="hotel-cards">
-  <div class="h-card">
-    <i class="fa-solid fa-mug-saucer"></i>
-    <h2>Breakfast</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam dolo ducimus distinctio. Ut, fugiat debitis.</p>
+    <!-- Rooms Section -->
+    <section id="rooms" class="rooms-section">
+        <div class="container">
+            <h2>Luxurious Rooms</h2>
+            <div class="rooms-grid">
+                <div class="room-card">
+                    <img src="/Images/rooms-images/room-1.jpeg" alt="Deluxe Family Suite">
+                    <div class="room-info">
+                        <h3>Deluxe Family Suite</h3>
+                        <div class="room-features">
+                            <span class="room-feature">
+                                <i class="fas fa-bed"></i> 2 King Beds
+                            </span>
+                            <span class="room-feature">
+                                <i class="fas fa-user-friends"></i> 4 Guests
+                            </span>
+                            <span class="room-feature">
+                                <i class="fas fa-vector-square"></i> 45m²
+                            </span>
+                        </div>
+                        <p>Spacious suite with city view, perfect for families</p>
+                        <div class="room-price">
+                            <span class="price">$180</span>
+                            <span class="per-night">per night</span>
+                        </div>
+                        <button class="BookNow-btn">Book Now</button>
+                    </div>
+                </div>
 
-  </div>
-  <div class="h-card">
-    <i class="fa-solid fa-kitchen-set"></i>
-        <h2>Kitchen</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam dolo ducimus distinctio. Ut, fugiat debitis.</p>
+                <div class="room-card">
+                    <img src="/Images/rooms-images/room-2.jpeg" alt="Executive Room">
+                    <div class="room-info">
+                        <h3>Executive Room</h3>
+                        <div class="room-features">
+                            <span class="room-feature">
+                                <i class="fas fa-bed"></i> 1 King Bed
+                            </span>
+                            <span class="room-feature">
+                                <i class="fas fa-user-friends"></i> 2 Guests
+                            </span>
+                            <span class="room-feature">
+                                <i class="fas fa-vector-square"></i> 35m²
+                            </span>
+                        </div>
+                        <p>Modern room with work desk and premium amenities</p>
+                        <div class="room-price">
+                            <span class="price">$150</span>
+                            <span class="per-night">per night</span>
+                        </div>
+                        <button class="BookNow-btn">Book Now</button>
+                    </div>
+                </div>
 
-  </div><div class="h-card">
-    <i class="fa-solid fa-shield-halved"></i>
-    <h2>Smart Security</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam dolo ducimus distinctio. Ut, fugiat debitis.</p>
+                <div class="room-card">
+                    <img src="/Images/rooms-images/room-3.jpeg" alt="Premium Suite">
+                    <div class="room-info">
+                        <h3>Premium Suite</h3>
+                        <div class="room-features">
+                            <span class="room-feature">
+                                <i class="fas fa-bed"></i> 1 King Bed
+                            </span>
+                            <span class="room-feature">
+                                <i class="fas fa-user-friends"></i> 2 Guests
+                            </span>
+                            <span class="room-feature">
+                                <i class="fas fa-vector-square"></i> 50m²
+                            </span>
+                        </div>
+                        <p>Luxury suite with separate living area and balcony</p>
+                        <div class="room-price">
+                            <span class="price">$220</span>
+                            <span class="per-night">per night</span>
+                        </div>
+                        <button class="BookNow-btn">Book Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  </div>
-</div>
-</section>
+    <!-- Facilities Section -->
+    <section id="facilities" class="facilities-section">
+        <div class="container">
+            <h2>Our Facilities</h2>
+            <div class="facilities-grid">
+                <div class="facility-card">
+                    <i class="fas fa-wifi"></i>
+                    <h3>High-Speed WiFi</h3>
+                    <p>Complimentary high-speed internet access throughout the property</p>
+                </div>
+                <div class="facility-card">
+                    <i class="fas fa-swimming-pool"></i>
+                    <h3>Swimming Pool</h3>
+                    <p>Temperature-controlled indoor pool with lounging area</p>
+                </div>
+                <div class="facility-card">
+                    <i class="fas fa-utensils"></i>
+                    <h3>Fine Dining</h3>
+                    <p>24/7 restaurant serving international cuisine</p>
+                </div>
+                <div class="facility-card">
+                    <i class="fas fa-dumbbell"></i>
+                    <h3>Fitness Center</h3>
+                    <p>Modern gym equipment with personal trainers</p>
+                </div>
+                <div class="facility-card">
+                    <i class="fas fa-spa"></i>
+                    <h3>Spa & Wellness</h3>
+                    <p>Relaxing spa treatments and massage services</p>
+                </div>
+                <div class="facility-card">
+                    <i class="fas fa-car"></i>
+                    <h3>Free Parking</h3>
+                    <p>Secure underground parking for all guests</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<br>
-<!-- Bookingform-->
- <section id="Bookingform">
-
-<div class="form">
-  <h3>Make Reservation</h3>
-  <h1>Book A Room</h1>
-  <form action="https://api.web3forms.com/submit" method="POST">
-    <input type="hidden" name="access_key" value="f7c7cf5c-f5e7-4cdb-9133-e5125f83945e">
-    <label for=""><i class="fa-solid fa-user"></i>  Name <br><input type="text" name="User-Name"  required> </label>
-    <label for=""><i class="fa-regular fa-envelope"></i> Email <br><input type="email" name="Email" id="" required></label>
-   <label for=""><i class="fa-solid fa-circle-check"></i> Check In Date <br><input type="date" name="Check-in Date" required></label>
-   <label for=""><i class="fa-regular fa-circle-xmark"></i>  Check Out Date <br><input type="date" name="Check-out date" id="" required></label>
-   <label for="Guests"><i class="fa-solid fa-user"></i> Guests <br><input type="number" name="Numebr of guest" id="" placeholder="Enter the number of Guest" required></label>
-   <label for="Room"><i class="fa-solid fa-bell-concierge"></i> Room <br> <input type="number" name="number of rooms" value=""placeholder="Enter the number of Rooms" required></label>
- 
-   <button type="submit" class="form-btn">BOOK NOW</button>
-  </form>
-</div>
-<div class="form-img"></div>
-
- </section>
-<!-- Contact Section -->
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <form action="https://api.web3forms.com/submit" method="POST">
-            <input type="hidden" name="access_key" value="f7c7cf5c-f5e7-4cdb-9133-e5125f83945e">
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email" required>
-            <textarea name="message" placeholder="Your Message" required></textarea>
-            <button type="submit">Submit</button>
-        </form>
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Contact Us</h2>
+                <p>Get in touch with us for any inquiries or assistance</p>
+            </div>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Address</h3>
+                            <p>123 Comfort Street, City, Country</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>Phone</h3>
+                            <p>+1 234 567 890</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <p>info@comforthome.com</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" required>
+                        <label for="name">Your Name</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" required>
+                        <label for="email">Your Email</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" name="subject" required>
+                        <label for="subject">Subject</label>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" required></textarea>
+                        <label for="message">Your Message</label>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
     </section>
 
     <!-- Footer -->
-    <footer>
-<div class="fotter-box1">
-  <h1><img src="/Images/logo.jpg" alt="">Comfort Home Islamabad</h1>
-  <ul>
-    <li class="info-list"><i class="fa-solid fa-phone-volume"></i>  1800-121-3637</li>
-    <li class="info-list"><i class="fa-regular fa-envelope"></i>   ComfortHome111@gmail.com</li>
-    <li class="info-list"><i class="fa-solid fa-location-dot"></i>
-      1247/Plot No. 39, DHA Phase 1,  Islamabad</li>
-  </ul>
-</div>
-<div class="fotter-box2">
-  <h1>Our Links</h1>
-  <ul>
-    <li><a href="#hero">Home</a></li>
-    <li><a href="#about">About Us</a></li>
-    <li><a href="#services">Services</a></li>
-    <li><a href="#contact">Contact Us</a></li>
-  </ul>
-</div>
-<div class="fotter-box2">
-  <h1>Our Services</h1>
-  <ul>
-    <li><a href="">FAQ</a></li>
-    <li><a href="">Suppot Us</a></li>
-    <li><a href="">Privacy</a></li>
-    <li><a href="">Terms & Conditions</a></li>
-  </ul>
-</div>
-<div class="fotter-box3">
-  <h1>Subscribe To Our Newsletter</h1>
-  <input type="email" name="" id="" placeholder="Enter your Email"> <button>Subscribe</button>
-</div>
+    <footer class="booking-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3>About Comfort Home</h3>
+                    <p>Experience luxury and comfort in the heart of Islamabad. Our hotel offers world-class amenities and exceptional service to make your stay memorable.</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#hero"><i class="fas fa-chevron-right"></i>Home</a></li>
+                        <li><a href="#rooms"><i class="fas fa-chevron-right"></i>Our Rooms</a></li>
+                        <li><a href="#facilities"><i class="fas fa-chevron-right"></i>Facilities</a></li>
+                        <li><a href="#contact"><i class="fas fa-chevron-right"></i>Contact Us</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i>Privacy Policy</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i>Terms & Conditions</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p><i class="fas fa-phone"></i> +92 300 1234567</p>
+                    <p><i class="fas fa-envelope"></i> info@comforthome.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> 1247/Plot No. 39, DHA Phase 1, Islamabad</p>
+                    <p><i class="far fa-clock"></i> Open 24/7</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to our newsletter for updates and exclusive offers.</p>
+                    <form class="footer-newsletter">
+                        <input type="email" placeholder="Your Email Address" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Comfort Home Islamabad. All rights reserved. | Designed with <i class="fas fa-heart"></i> by Wasif Awan</p>
+            </div>
+        </div>
     </footer>
+
     <script src="script.js"></script>
 </body>
 </html>
